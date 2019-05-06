@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Alcool ou Gasolina</string>
+    <string name="titulo">A melhor a opção para você e seu carro</string>
+    <string name="descricaoAlcool">Preço Alcool ex: 3.20</string>
+    <string name="DescricaoGasolina">Preço Gasolina ex: 4.20</string>
+    <string name="btnCalcular">Calcular</string>
+    <string name="DescricaoPercentual">Rendimento do alcool em relação a gasolina: </string>
+    <string name="descricaoImgLogo">Imagem de um carro com os dizeres alcool ou gasolina</string>
+    <string name="percentualRendimento">Percentual rendimento alcool: 0%</string>
+    <string name="textViewSeek">Selecione o percentual do rendimento do alcool</string>
+
+</resources>
