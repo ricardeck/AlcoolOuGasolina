@@ -6,7 +6,7 @@
     <string name="btnCalcular">Calcular</string>
     <string name="DescricaoPercentual">Rendimento do alcool em relação a gasolina: </string>
     <string name="descricaoImgLogo">Imagem de um carro com os dizeres alcool ou gasolina</string>
-    <string name="percentualRendimento">Percentual rendimento alcool: 0%</string>
+    <string name="percentualRendimento">Rendimento alcool: 0%</string>
     <string name="textViewSeek">Selecione o percentual do rendimento do alcool</string>
 
 </resources>

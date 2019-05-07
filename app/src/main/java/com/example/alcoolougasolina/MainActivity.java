@@ -6,6 +6,8 @@ import android.view.View;
 import android.widget.SeekBar;
 import android.widget.TextView;
 
+import java.text.DecimalFormat;
+
 public class MainActivity extends AppCompatActivity {
     private SeekBar seekBar;
     private double valorSeek;
@@ -19,8 +21,8 @@ public class MainActivity extends AppCompatActivity {
         seekBar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
             @Override
             public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
-                tvSeek.setText("Percentual rendimento alcool: " + seekBar.getProgress() + "%");
-                valorSeek = seekBar.getProgress()/10;
+                tvSeek.setText("Rendimento alcool: " + seekBar.getProgress() + "%");
+                valorSeek = seekBar.getProgress()/100.0;
             }
 
 
@@ -51,12 +53,12 @@ public class MainActivity extends AppCompatActivity {
 
         double relacao = Double.parseDouble(textViewAlcool.getText().toString()) / Double.parseDouble(textViewGasolina.getText().toString());
 
-        if(relacao <= valorSeek/10)
+        if(relacao <= valorSeek)
             textViewResultado.setText("ABASTEÇA COM ALCOOL");
         else
             textViewResultado.setText("ABASTEÇA COM GASOLINA");
 
-        textViewRelacao.setText("Rendimento: " + String.format("%.2f", relacao*100) + "%");
+        textViewRelacao.setText("Consumo alcool: " + String.format("%.2f", relacao*100) + "%");
 
     }
 
